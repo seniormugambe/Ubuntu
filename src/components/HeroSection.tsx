@@ -32,17 +32,17 @@ const HeroSection = () => {
               Empowered by Uganda's Sovereign Cloud
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Connect, share, and grow together on Africa's first sovereign social media platform. 
-              Built for African communities, celebrating our languages, cultures, and digital independence.
+              Connect, share, and grow together on Africa's first AI-powered sovereign social platform. 
+              Experience intelligent content creation, smart translations, and personalized cultural stories.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="ubuntu" size="lg" className="min-w-48">
-              Join the Movement
+            <Button variant="ubuntu" size="lg" className="min-w-48" asChild>
+              <a href="/feed">Start Connecting</a>
             </Button>
-            <Button variant="sovereign" size="lg" className="min-w-48">
-              Learn More
+            <Button variant="sovereign" size="lg" className="min-w-48" asChild>
+              <a href="/sovereign">Sovereign Platform</a>
             </Button>
           </div>
 
