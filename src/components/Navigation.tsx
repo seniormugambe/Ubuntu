@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Menu, X, Globe, Home, BookOpen, Video, Users, GraduationCap, Shield, Image } from "lucide-react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -62,6 +63,7 @@ const Navigation = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-3">
+            <ThemeToggle />
             <Button variant="ubuntu" size="sm">
               Get Started
             </Button>
@@ -97,7 +99,11 @@ const Navigation = () => {
                   </Button>
                 );
               })}
-              <div className="pt-3 border-t border-border/50">
+              <div className="pt-3 border-t border-border/50 space-y-2">
+                <div className="flex items-center justify-between px-3 py-2">
+                  <span className="text-sm text-muted-foreground">Theme</span>
+                  <ThemeToggle />
+                </div>
                 <Button variant="ubuntu" className="w-full">
                   Get Started
                 </Button>
