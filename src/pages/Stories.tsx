@@ -8,7 +8,7 @@ import { BookOpen, Video, Brain, Sparkles, TrendingUp } from "lucide-react";
 import { useState } from "react";
 
 const Stories = () => {
-  const [activeTab, setActiveTab] = useState<"stories" | "shorts">("stories");
+  const [activeTab, setActiveTab] = useState<"stories" | "shorts">("shorts");
 
   return (
     <div className="min-h-screen bg-background">

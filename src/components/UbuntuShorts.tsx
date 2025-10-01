@@ -192,11 +192,14 @@ const UbuntuShorts = () => {
       {/* Video Area */}
       <div 
         ref={videoRef}
-        className="relative aspect-[9/16] bg-gradient-to-br from-gray-900 to-black flex items-center justify-center cursor-pointer"
+        className="relative aspect-[9/16] bg-gradient-to-br from-primary/20 via-accent/20 to-heritage/20 flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-[1.02]"
         onClick={togglePlay}
       >
+        {/* Animated Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/60" />
+        
         {/* Thumbnail/Video Placeholder */}
-        <div className="text-8xl opacity-50">
+        <div className={`text-8xl transition-all duration-500 ${isPlaying ? 'scale-110 opacity-70' : 'opacity-50'} relative z-10`}>
           {currentShortData.thumbnail}
         </div>
         
