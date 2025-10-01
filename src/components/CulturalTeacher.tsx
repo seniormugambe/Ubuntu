@@ -92,7 +92,7 @@ const CulturalTeacher = () => {
     }
   ]);
 
-  const lessonTypes = [
+  const lessonTypes: Array<{ type: CulturalLesson["type"], label: string, icon: any, color: string }> = [
     { type: "tradition", label: "Tradition", icon: Users, color: "bg-blue-100 text-blue-700" },
     { type: "language", label: "Language", icon: Languages, color: "bg-green-100 text-green-700" },
     { type: "food", label: "Food", icon: Utensils, color: "bg-orange-100 text-orange-700" },

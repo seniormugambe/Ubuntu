@@ -168,7 +168,7 @@ const SovereignCloudStatus = () => {
                         {hub.load}% load
                       </div>
                     )}
-                    <Badge className={getStatusColor(hub.status)} size="sm">
+                    <Badge className={getStatusColor(hub.status)}>
                       {hub.status}
                     </Badge>
                   </div>
